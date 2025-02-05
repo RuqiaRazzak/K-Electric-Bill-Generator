@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css/style.css">
+    <title>K-Electric Bill Generator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>K-Electric Bill Generator</h1>
+        <form id="billForm">
+            <label for="customerName">Customer Name:</label>
+            <input type="text" id="customerName" placeholder="Enter your name" required>
+
+            <label for="currentMonth">Billing Month:</label>
+            <input type="text" id="BillingMonth" placeholder="Enter Month Name" required>
+
+            <label for="currentMonth">Account Number:</label>
+            <input type="number" id="Accountnumber" placeholder="Enter 14 Digit-numbers" required>
+
+            <label for="numUnits">Number of Units:</label>
+            <input type="number" id="numUnits" placeholder="Enter units consumed" required>
+
+            <label for="chargePerUnit">Charges per Unit:</label>
+            <input type="number" id="chargePerUnit" placeholder="Enter charges per unit" required>
+
+            <button type="button" onclick="generateBill()">Generate Bill</button>
+        </form>
+       <div id="billDetails" class="bill-details">
+        </div>
+     </div>
+ 
+    <script src="./apps.js/apps.js"></script>
+</body>
+</html>
